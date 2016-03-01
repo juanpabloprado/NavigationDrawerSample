@@ -51,7 +51,7 @@ public class BaseDrawerActivity extends BaseActivity
 
   @Override public void setContentView(int layoutResID) {
     super.setContentViewWithoutInject(R.layout.activity_drawer);
-    ViewGroup viewGroup = (ViewGroup) findViewById(R.id.content_root);
+    ViewGroup viewGroup = (ViewGroup) findViewById(R.id.content_frame);
     LayoutInflater.from(this).inflate(layoutResID, viewGroup, true);
     bindViews();
     setupHeader();
