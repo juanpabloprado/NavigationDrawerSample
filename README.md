@@ -1,4 +1,4 @@
-CountryPicker
+NavigationDrawerSample
 =============
 Demo sample written to demonstrate how to use the Navigation Drawer using activities instead of fragments
 
@@ -9,7 +9,7 @@ Screenshots
 License
 -------
 
-    Copyright 2015 Juan Pablo Prado
+    Copyright 2016 Juan Pablo Prado
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
