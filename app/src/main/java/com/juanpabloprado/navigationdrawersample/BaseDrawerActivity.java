@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -39,7 +39,6 @@ public class BaseDrawerActivity extends BaseActivity
   private static final int MAIN_CONTENT_FADEOUT_DURATION = 150;
 
   private static final int MAIN_CONTENT_FADEIN_DURATION = 250;
-  private ImageView avatarView;
 
   /**
    * Returns the navigation drawer item that corresponds to this Activity. Subclasses
@@ -81,7 +80,7 @@ public class BaseDrawerActivity extends BaseActivity
       toolbar.setNavigationIcon(R.drawable.ic_menu_white);
       toolbar.setNavigationOnClickListener(new View.OnClickListener() {
         @Override public void onClick(View v) {
-          drawerLayout.openDrawer(Gravity.LEFT);
+          drawerLayout.openDrawer(GravityCompat.START);
         }
       });
     }
@@ -89,7 +88,7 @@ public class BaseDrawerActivity extends BaseActivity
 
   private void setupHeader() {
     View headerView = navigationView.getHeaderView(0);
-    avatarView = (ImageView) headerView.findViewById(R.id.avatar);
+    ImageView avatarView = (ImageView) headerView.findViewById(R.id.avatar);
 
     Picasso.with(BaseDrawerActivity.this).load(profilePhoto).into(avatarView);
   }
