@@ -1,0 +1,11 @@
+<resources>
+  <string name="app_name">Navigation Drawer Sample</string>
+
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+
+  <string name="user_profile_photo">https://pbs.twimg.com/profile_images/607692101908758528/RQkD38Xu.jpg</string>
+  <string name="avatar_description">avatar picture</string>
+  <string name="first_label">First Hello World!</string>
+  <string name="second_label">Second Hello World!</string>
+</resources>
